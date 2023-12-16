@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+canvas{ 
+    position: absolute;
+    background-color: black;
+    z-index: -3;
+    filter: blur(10px) contrast(4);
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box button{
+    background-color: transparent;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-family: system-ui;
+    font-weight: bolder;
+    font-size: 3rem;
+    width: 270px;
+    border: 3px solid white;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.box button:hover{
+    box-shadow: inset 10px 10px 10px 2px red,inset -10px -10px 10px 2px red;
+    background-color: yellow;
+    color: red;
+}
